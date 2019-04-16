@@ -22,7 +22,7 @@ $ gem install bundler
 In the top level directory of the website repository, install Jekyll and other
 dependencies from the GitHub Pages gem (see `Gemfile`):
 ```
-bundle install
+$ bundle install
 ```
 
 To keep the site up to date with the GitHub Pages gem,
@@ -32,7 +32,7 @@ $ bundle update
 
 After making any changes, you can build and view the site locally,
 ```bash
-bundle exec jekyll serve
+$ bundle exec jekyll serve
 ```
 which will build and serve the website out of `http://127.0.0.1:4000`.
 
