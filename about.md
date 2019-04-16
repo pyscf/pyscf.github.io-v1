@@ -15,6 +15,7 @@ title: About PySCF
 - Zhihao Cui, Caltech
 - Yang Gao, Caltech
 - Iliya Sabzevari, UC Boulder
+- James Smith, UC Boulder
 - Xiao Wang, Flatiron Institute
 
 # Funding
