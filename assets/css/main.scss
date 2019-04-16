@@ -1,0 +1,56 @@
+---
+---
+
+@import "variables";
+@import "bootstrap/bootstrap";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-top: 56px;
+  margin-bottom: 7em; //footer
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.page h1 {
+  font-size: 2.1rem;
+  margin-top: 2rem;
+}
+.page h2 {
+  font-size: 1.5rem;
+}
+.page h3 {
+  font-size: 1.4rem;
+}
+.page h4 {
+  font-size: 1.2rem;
+}
+
+.page {
+  font-size: 1.1rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}

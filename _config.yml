@@ -1,0 +1,17 @@
+title: PySCF 
+email: ""
+description: >- # this means to ignore newlines
+      PySCF is an open-source collection of electronic structure modules powered
+      by Python.  The package aims to provide a simple, lightweight, and
+      efficient platform for quantum chemistry calculations and methodology
+      development.
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+   - Gemfile
+   - Gemfile.lock

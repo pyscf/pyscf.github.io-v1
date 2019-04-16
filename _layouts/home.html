@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>{{ page.title }}</title>
+
+  <!-- Bootstrap core CSS and custom styles -->
+  <link rel="stylesheet" href="{{'/assets/css/main.css' | prepend: site.baseurl}}">
+  <link rel="stylesheet" href="{{'/assets/css/friendly.css' | prepend: site.baseurl}}">
+
+  <!-- Font Awesome --> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/assets/images/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  {% include navigation.html %}
+
+  <!-- Header -->
+  {% include banner.html %}
+  
+  <!-- Page Content -->
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-12 mb-5">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  {% include footer.html %}
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{'/assets/javascript/bootstrap/jquery.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{'/assets/javascript/bootstrap/bootstrap.bundle.min.js' | prepend: site.baseurl}}"></script>
+
+</body>
+
+</html>
