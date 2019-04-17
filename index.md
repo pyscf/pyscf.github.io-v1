@@ -107,8 +107,9 @@ $ git clone https://github.com/pyscf/pyscf.git
     <a href="https://github.com/dftlibs/xcfun">XCFun</a>,
     the tensor contraction library
     <a href="https://github.com/devinamatthews/tblis">TBLIS</a>,
-    and the geometry optimizer
-    <a href="https://github.com/jhrmnn/pyberny">Berny</a>.</p>
+    and the geometry optimizers
+    <a href="https://github.com/jhrmnn/pyberny">Berny</a>
+    and <a href="https://github.com/leeping/geomeTRIC">geomeTRIC</a>.</p>
 </div>
 </div>
 </div>
