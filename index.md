@@ -150,3 +150,8 @@ $ git clone https://github.com/pyscf/pyscf.git
 </div>
 <!-- /.row -->
 
+---
+
+Recent papers using PySCF can be found on [Google
+Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0,33&sciodt=0,33&cites=3722063088839872672,9979767161526679081&scipsc=&q=&scisbd=1).
+
