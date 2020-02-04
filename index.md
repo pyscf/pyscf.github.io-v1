@@ -5,7 +5,7 @@ title: PySCF
 
 # Recent news
 
-This year, PySCF will celebrate the 5th anniversary of its first commit. In this
+**Apr 15, 2019.** This year, PySCF will celebrate the 5th anniversary of its first commit. In this
 short period, PySCF has changed from being a single-group code to one relied on
 daily by over 100 research teams in academia and industry across the world.  The
 [PySCF paper](https://onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1340) was one
