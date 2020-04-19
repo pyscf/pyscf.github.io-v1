@@ -4,5 +4,7 @@
   link: quickstart.html
 - name: Documentation
   link: documentation.html 
+- name: Benchmark
+  link: benchmark.html 
 - name: About
   link: about.html
