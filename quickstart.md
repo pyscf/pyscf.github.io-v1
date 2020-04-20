@@ -85,3 +85,11 @@ $ docker run -it pyscf/pyscf-1.7.1 start.sh ipython
 To manually install PySCF from source available in the [GitHub
 repo](https://github.com/pyscf/pyscf), see the detailed instructions available
 [here](http://pyscf.github.io/pyscf/install.html#manual-installation-from-github-repo).
+
+
+# Tutorial
+
+Tutorials and simple examples to use PySCF can be found in the online
+[documentation](http://pyscf.org/pyscf/tutorial.html), a github repo
+[here](https://github.com/nmardirossian/PySCF_Tutorial/blob/master/user_guide.ipynb),
+and a [blog](https://py-xdh.readthedocs.io/zh_CN/latest/) (written in Chinese).
