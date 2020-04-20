@@ -3,7 +3,9 @@ layout: default
 title: Benchmark of PySCF 
 ---
 
-# Platforms
+# Performance benchmark
+
+## Platforms
 
 |           | Platform I    | Platform II     | Platform III    | Platform IV     |
 | --------- |:-------------:|:---------------:|:---------------:|:---------------:|
@@ -15,61 +17,64 @@ title: Benchmark of PySCF
 
 ---
 
-# Individual Methods
-
-## CCSD, `OMP_NUM_THREADS=28` on Platform II
+## CCSD
+Timing for updaing CCSD amplitudes in one iteration.
+`OMP_NUM_THREADS=28` on Platform II.
 [test script](https://github.com/pyscf/pyscf/blob/master/examples/2-benchmark/ccsd_iteration.py)
 
 |         | Nocc | Nvir  | threads | time       |
 | :------ |:----:|:-----:|:-------:|:----------:|
-| H30/DZ  | 15   | 135   | 4       | 3.34       |
-| H30/TZ  | 15   | 405   | 12      | 62.84      |
-| H30/QZ  | 15   | 884   | 28      | 620.82     |
-| H30/5Z  | 15   | 1631  | 28      | 6887.41    |
-| H50/QZ  | 25   | 1472  | 28      | 8354.81    |
+| H30/DZ  | 15   | 135   | 4       | 3.34    s  |
+| H30/TZ  | 15   | 405   | 12      | 62.84   s  |
+| H30/QZ  | 15   | 884   | 28      | 620.82  s  |
+| H30/5Z  | 15   | 1631  | 28      | 6887.41 s  |
+| H50/QZ  | 25   | 1472  | 28      | 8354.81 s  |
 
 ---
 
-## FCI on Platform III
+## FCI
+Timing for FCI matrix-vector operation in one iteration.
+8 threads - 36 threads on Platform III.
 [test script](https://github.com/pyscf/pyscf/blob/master/examples/2-benchmark/fci_iteration.py)
 
 ### FCI solver for singlet
 
 | threads | (12o, 12e) | (14o, 14e) | (16o, 16e) | (18o, 18e) |
 |:--------|:----------:|:----------:|:----------:|:----------:|
-| 8       | 0.072      | 0.99       | 18.50      | 423.42     |  
-| 16      | 0.079      | 0.75       | 11.75      | 242.62     |  
-| 32      | 0.095      | 0.71       | 8.364      | 155.59     |  
-| 36      | 0.104      | 0.73       | 8.298      | 148.39     |  
+| 8       | 0.072 s    | 0.99 s     | 18.50 s    | 423.42 s   |  
+| 16      | 0.079 s    | 0.75 s     | 11.75 s    | 242.62 s   |  
+| 32      | 0.095 s    | 0.71 s     | 8.364 s    | 155.59 s   |  
+| 36      | 0.104 s    | 0.73 s     | 8.298 s    | 148.39 s   |  
 
 ### FCI solver for arbitrary spin symmetry states
 
 | threads | (12o, 12e) | (14o, 14e) | (16o, 16e) | (18o, 18e) |
 |:--------|:----------:|:----------:|:----------:|:----------:|
-| 8       | 0.072      | 1.61       | 33.84      | 803.63     |
-| 16      | 0.045      | 0.95       | 20.07      | 470.32     |
-| 32      | 0.034      | 0.60       | 11.46      | 275.40     |
-| 36      | 0.036      | 0.57       | 10.97      | 254.40     |
+| 8       | 0.072 s    | 1.61 s     | 33.84 s    | 803.63 s   |
+| 16      | 0.045 s    | 0.95 s     | 20.07 s    | 470.32 s   |
+| 32      | 0.034 s    | 0.60 s     | 11.46 s    | 275.40 s   |
+| 36      | 0.036 s    | 0.57 s     | 10.97 s    | 254.40 s   |
 
 ---
 
-## Fock build with Multigrid, `OMP_NUM_THREADS=32` on Platform III
+## Fock build with Multigrid
+Timing for computing effective potential matrix in Fock build.
+`OMP_NUM_THREADS=32` on Platform III.
 [test script](https://github.com/pyscf/pyscf/blob/master/examples/2-benchmark/fock_multigrid.py)
 
-|water cluster |  nao   |  LSDA   | PBE        |
-|:-------------|:-------|:-------:|:----------:|
-|32x1x1x1      |  1280  | 8.04    |  23.27     |
-|32x2x1x1      |  2560  | 19.74   |  55.74     |
-|32x2x2x1      |  5120  | 74.08   |  252.80    |
-|32x2x2x2      |  12800 | 276.58  |  1201.14   |
-|64x2x2x2      |  25600 | 1278.69 |  4823.12   |
+|water cluster |  nao   |  LSDA     | PBE        |
+|:-------------|:-------|:---------:|:----------:|
+|32x1x1x1      |  1280  | 8.04    s |  23.27   s |
+|32x2x1x1      |  2560  | 19.74   s |  55.74   s |
+|32x2x2x1      |  5120  | 74.08   s |  252.80  s |
+|32x2x2x2      |  12800 | 276.58  s |  1201.14 s |
+|64x2x2x2      |  25600 | 1278.69 s |  4823.12 s |
 
 
 ---
 
-# Molecules
-
-## Benzene, `OMP_NUM_THREADS=16` on Platform I
+## Benzene
+`OMP_NUM_THREADS=16` on Platform I.
 [test script](https://github.com/pyscf/pyscf/blob/master/examples/2-benchmark/bz.py)
 
 |---------------|---------|---------|-------------|
@@ -85,8 +90,8 @@ title: Benchmark of PySCF
 
 ---
 
-## C60, `OMP_NUM_THREADS=16` on Platform I
-
+## C60
+`OMP_NUM_THREADS=16` on Platform I.
 [test script](https://github.com/pyscf/pyscf/blob/master/examples/2-benchmark/c60.py)
 
 |---------------|---------|---------|
@@ -99,7 +104,8 @@ title: Benchmark of PySCF
 
 ---
 
-## Fe(II)-porphyrin (FeC20H12N4), `OMP_NUM_THREADS=16` on Platform I
+## Fe(II)-porphyrin (FeC20H12N4)
+`OMP_NUM_THREADS=16` on Platform I.
 test script
 
 |---------------|---------|---------|---------|
@@ -109,8 +115,4 @@ test script
 |CASSCF(10,10)  | 1808 s  | 241 m   |         |
 |CASSCF(11,8)   | 763.8 s | 150.3 m | 1280 m  |
 |---------------|---------|---------|---------|
-
----
-
-# Materials
 
