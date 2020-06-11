@@ -69,7 +69,7 @@ PySCF is available as a [Docker](https://www.docker.com/get-started) image.  For
 browser-based use, you can start a container with a Jupyter notebook server
 listening for HTTP connections on port 8888,
 ``` shell
-$ docker run -it -p 8888:8888 pyscf/pyscf-1.7.1
+$ docker run -it -p 8888:8888 pyscf/pyscf:latest
 ```
 and then visit `https://localhost:8888` with your browser in order to use PySCF
 in a notebook.
@@ -77,7 +77,7 @@ in a notebook.
 Alternatively, you can use Docker to enable PySCF in an
 [IPython](https://ipython.org/) shell:
 ``` shell
-$ docker run -it pyscf/pyscf-1.7.1 start.sh ipython
+$ docker run -it pyscf/pyscf:latest start.sh ipython
 ``` 
 
 # Manual installation from source
