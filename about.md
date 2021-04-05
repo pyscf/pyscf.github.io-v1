@@ -9,7 +9,7 @@ title: About PySCF
 - [Garnet Chan](http://www.chan-lab.caltech.edu/), Caltech
 - [Sandeep Sharma](https://www.colorado.edu/lab/sharmagroup/), UC Boulder
 - [Alexander Sokolov](https://research.cbc.osu.edu/sokolov.8/), Ohio State
-- [Qiming Sun](http://www.sunqm.net/), Tencent Quantum Laboratory
+- [Qiming Sun](http://www.sunqm.net/), Axiomquant LLC
 
 ## Maintainers 
 - Zhihao Cui, Caltech

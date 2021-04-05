@@ -16,44 +16,6 @@ version:
 $ pip install --upgrade pyscf
 ```
 
-## BLAS
-
-PySCF requires a BLAS library, which is typically detected automatically. If a
-BLAS library exists but wasn't detected or an undesired BLAS library was
-detected, you can specify the BLAS library in one of two ways:
-- use the `LDFLAGS` environment variable: 
-  ``` shell
-  $ LDFLAGS="-L/path/to/blas -lblas" pip install pyscf
-  ```
-- use the `PYSCF_INC_DIR` environment variable:
-  ``` shell
-  $ PYSCF_INC_DIR="/path/to/blas:/path/to/other/lib" pip install pyscf
-  ```
-
-<div class="alert alert-warning" role="alert" markdown="1">
-
-#### Note
-{:.alert-heading} 
-
-Precompiled Python wheels sometimes don't work with certain version of Python
-(3.4 and 3.5). If you’re using macOS with python 3.4 or 3.5, pip may execute the
-setup.py file in the source directory and terminate due to a path error for the
-BLAS library. This can be fixed by specifying the path to the BLAS library
-as described above.
-
-</div>
-
-## Libxc
-
-The `pyscf.dft` module requires the exchange-correlation functional library
-[Libxc](https://tddft.org/programs/libxc/), which is not yet available in the
-PyPI repository.  To enable the `pyscf.dft` module, Libxc can be downloaded and
-manually compiled using the `--enable-shared` flag.  The path to Libxc must be
-provided in the `PYSCF_INC_DIR` environment variable before installing PySCF, e.g.
-``` shell
-$ PYSCF_INC_DIR="/path/to/libxc" pip install pyscf 
-``` 
-
 # Installation with conda
 
 PySCF can be installed using the <a href="https://conda.io/en/latest/">conda</a> package manager
@@ -90,6 +52,6 @@ repo](https://github.com/pyscf/pyscf), see the detailed instructions available
 # Tutorial
 
 Tutorials and simple examples to use PySCF can be found in the online
-[documentation](http://pyscf.org/pyscf/tutorial.html), a github repo
+[documentation](http://pyscf.org/pyscf/quickstart.html), a github repo
 [here](https://github.com/nmardirossian/PySCF_Tutorial/blob/master/user_guide.ipynb),
 and a [blog](https://py-xdh.readthedocs.io/zh_CN/latest/) (written in Chinese).
