@@ -21,7 +21,7 @@ board of directors. The initial board members will be:
 - [Garnet Chan](http://www.chan-lab.caltech.edu/), Caltech
 - [Sandeep Sharma](https://www.colorado.edu/lab/sharmagroup/), UC Boulder
 - [Alexander Sokolov](https://research.cbc.osu.edu/sokolov.8/), Ohio State
-- [Qiming Sun](http://www.sunqm.net/), Tencent Quantum Laboratory
+- [Qiming Sun](http://www.sunqm.net/), Axiomquant LLC
 
 The aims of the board will be to: 
 1. maintain the continued high quality of the
